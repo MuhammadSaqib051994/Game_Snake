@@ -1,1 +1,2 @@
 c:\users\muhammad saqib\documents\visual studio 2013\Projects\snake_Game\snake_Game\bin\Debug\snake_Game.exe.config
+C:\Users\Muhammad Saqib\Documents\GitHub\snake_Game\snake_Game\bin\Debug\snake_Game.exe.config
