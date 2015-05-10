@@ -1,6 +1,6 @@
 ﻿namespace snake_Game
 {
-    partial class Form1
+    partial class Game_Form
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,7 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.labelscore = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,15 +53,26 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Score";
             // 
-            // Form1
+            // labelscore
+            // 
+            this.labelscore.AutoSize = true;
+            this.labelscore.Font = new System.Drawing.Font("Script MT Bold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelscore.Location = new System.Drawing.Point(75, 9);
+            this.labelscore.Name = "labelscore";
+            this.labelscore.Size = new System.Drawing.Size(75, 29);
+            this.labelscore.TabIndex = 2;
+            this.labelscore.Text = "label2";
+            // 
+            // Game_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(452, 432);
+            this.Controls.Add(this.labelscore);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "Game_Form";
             this.Text = "Game_Form";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -72,6 +84,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelscore;
     }
 }
 
