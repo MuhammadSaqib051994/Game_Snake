@@ -1,6 +1,6 @@
 ﻿namespace snake_Game
 {
-    partial class Game_Form
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.labelscore = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,6 +44,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(453, 395);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -52,6 +55,7 @@
             this.label1.Size = new System.Drawing.Size(57, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Score";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelscore
             // 
@@ -62,8 +66,13 @@
             this.labelscore.Size = new System.Drawing.Size(75, 29);
             this.labelscore.TabIndex = 2;
             this.labelscore.Text = "label2";
+            this.labelscore.Click += new System.EventHandler(this.labelscore_Click);
             // 
-            // Game_Form
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -72,8 +81,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.MaximizeBox = false;
-            this.Name = "Game_Form";
-            this.Text = "Game_Form";
+            this.Name = "Form1";
+            this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -85,6 +94,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelscore;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

@@ -9,15 +9,20 @@ namespace snake_Game
 {
     class Inputs
     {
-           private static Hashtable keytable = new Hashtable();
-           public static bool keyPressed(Keys key)
-           
+        private static Hashtable keytable = new Hashtable();
+        
+        public static bool KeyPressed(Keys key)
+        {
+            if(keytable[key]==null)
             {
-               if(keytable[key]==null)
-            
-                  {
-                        return false; 
-                  }   
-            } 
+                return false; 
+            }   
+               return(bool) keytable[key];
+        }
+           
+        public static void ChangeState(Keys key, bool state)
+        {
+               keytable[key]=state; 
+        }
     }
 }
