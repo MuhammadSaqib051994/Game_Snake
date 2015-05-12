@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,19 +11,37 @@ using System.Windows.Forms;
 
 namespace snake_Game
 {
-    public partial class Form1 : Form
+    public partial class Game_Form : Form
     {
         private List<circle>snake_Game = new List<circle>();
         private circle food = new circle(); 
 
-        public Form1()
+        public Game_Form()
         {
             InitializeComponent();
 
             new Settings();
-            gameTimer.interval = 1000 / Settings.speed;
+            Gametimer.Interval = 1000 / Settings.speed;
+            Gametimer.Tick +=UpdateScreen();
+            Gametimer.Start();
+
+            StartGame();
+         
+        }
+        private void StartGame()
+        {
+            snake_Game.Clear();
+            circle head = new circle();
+            head.X = 10;
+            head.Y = 5;
+
+            snake_Game.Add(head);
+
 
         }
+
+
+
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
