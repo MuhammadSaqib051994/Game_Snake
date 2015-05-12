@@ -59,17 +59,11 @@ namespace snake_Game
         {
             width = 16;
             height= 16;
-            speed = 16;
+            speed = 100;
             points= 10;
             score = 0;
             Gameover = false;
             direction=Direction.down;
-
-
-
-
-        
         }
-
     }
 }

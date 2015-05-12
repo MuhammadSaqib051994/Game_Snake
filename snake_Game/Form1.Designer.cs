@@ -39,9 +39,10 @@
             // pbcanvas
             // 
             this.pbcanvas.BackColor = System.Drawing.Color.SteelBlue;
-            this.pbcanvas.Location = new System.Drawing.Point(-2, 37);
+            this.pbcanvas.BackgroundImage = global::snake_Game.Properties.Resources.green_background_1371059839NnE;
+            this.pbcanvas.Location = new System.Drawing.Point(4, 49);
             this.pbcanvas.Name = "pbcanvas";
-            this.pbcanvas.Size = new System.Drawing.Size(453, 395);
+            this.pbcanvas.Size = new System.Drawing.Size(442, 376);
             this.pbcanvas.TabIndex = 0;
             this.pbcanvas.TabStop = false;
             this.pbcanvas.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -50,6 +51,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Script MT Bold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 25);
@@ -60,10 +62,10 @@
             // labelscore
             // 
             this.labelscore.AutoSize = true;
-            this.labelscore.Font = new System.Drawing.Font("Script MT Bold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelscore.Location = new System.Drawing.Point(75, 9);
+            this.labelscore.Font = new System.Drawing.Font("Script MT Bold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelscore.Location = new System.Drawing.Point(89, 9);
             this.labelscore.Name = "labelscore";
-            this.labelscore.Size = new System.Drawing.Size(75, 29);
+            this.labelscore.Size = new System.Drawing.Size(65, 25);
             this.labelscore.TabIndex = 2;
             this.labelscore.Text = "label2";
             this.labelscore.Click += new System.EventHandler(this.labelscore_Click);

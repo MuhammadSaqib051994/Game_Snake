@@ -23,10 +23,7 @@ namespace snake_Game
         public circle()
         {
             X = 0;
-            Y = 0;
-                 
+            Y = 0;      
         }
-
-
     }
 }

@@ -22,7 +22,7 @@ namespace snake_Game
 
             new Settings();
             Gametimer.Interval = 1000 / Settings.speed;
-            Gametimer.Tick +=UpdateScreen();
+            //Gametimer.Tick +=UpdateScreen();
             Gametimer.Start();
 
             StartGame();
@@ -34,7 +34,6 @@ namespace snake_Game
             circle head = new circle();
             head.X = 10;
             head.Y = 5;
-
             snake_Game.Add(head);
 
 
