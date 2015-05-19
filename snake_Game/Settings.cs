@@ -17,28 +17,28 @@ namespace snake_Game
 
     class Settings
     {
-        public static int width
+        public static int Width
         {
             set;
             get;
         }
 
-        public static int height
+        public static int Height
         {
             set;
             get;
         }
-        public static int speed
+        public static int Speed
         {
             set;
             get;
         }
-        public static int score
+        public static int Score
         {
             set;
             get;
         }
-        public static int points
+        public static int Points
         {
             set;
             get;
@@ -57,11 +57,11 @@ namespace snake_Game
 
         public Settings()
         {
-            width = 16;
-            height= 16;
-            speed = 100;
-            points= 10;
-            score = 0;
+            Width = 16;
+            Height= 16;
+            Speed = 100;
+            Points= 10;
+            Score = 0;
             Gameover = false;
             direction=Direction.down;
         }
