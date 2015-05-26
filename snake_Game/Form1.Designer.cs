@@ -83,11 +83,11 @@
             this.lblGameOver.AutoSize = true;
             this.lblGameOver.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblGameOver.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblGameOver.Font = new System.Drawing.Font("Script MT Bold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGameOver.Font = new System.Drawing.Font("Script MT Bold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGameOver.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lblGameOver.Location = new System.Drawing.Point(118, 83);
+            this.lblGameOver.Location = new System.Drawing.Point(102, 104);
             this.lblGameOver.Name = "lblGameOver";
-            this.lblGameOver.Size = new System.Drawing.Size(122, 27);
+            this.lblGameOver.Size = new System.Drawing.Size(140, 31);
             this.lblGameOver.TabIndex = 3;
             this.lblGameOver.Text = "lblGameOver";
             this.lblGameOver.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -106,8 +106,6 @@
             this.Name = "Game_Form";
             this.Text = "Game_Form";
             this.Load += new System.EventHandler(this.Game_Form_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Game_Form_KeyDown);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Game_Form_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pbcanvas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

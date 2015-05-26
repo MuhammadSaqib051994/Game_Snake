@@ -59,7 +59,7 @@ namespace snake_Game
         {
             Width = 16;
             Height= 16;
-            Speed = 100;
+            Speed = 5;
             Points= 10;
             Score = 0;
             Gameover = false;
